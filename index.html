@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Distribuidora Aaander</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <!-- Loader -->
+    <div id="loader">
+      <div class="spinner"></div>
+      <p>Cargando dulzura...</p>
+    </div>
+
+
+    <!-- Encabezado -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-white" href="#">
+          <i class="fas fa-candy-cane me-2"></i>Aaander
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#categorias-container">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#horario">Horario</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#nosotros">Nosotros</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="hero" class="text-center text-white">
+      <div class="container">
+        <h1 class="display-4 mb-4">Dulzura en cada mordida</h1>
+        <p class="lead mb-0">Descubre nuestras golosinas irresistibles</p>
+        <div class="mt-4">
+          <i class="fas fa-arrow-down fa-2x animate-bounce"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Categorías -->
+    <main id="categorias-container" class="container my-5">
+      <h2 class="text-center mb-5">Nuestros Productos</h2>
+      <div class="accordion" id="categorias">
+
+        <!-- Chocolates -->
+        <div class="accordion-item mb-3" id="categoria-chocolates">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chocolates">
+              🍫 Chocolates
+            </button>
+          </h2>
+          <div id="chocolates" class="accordion-collapse collapse" data-bs-parent="#categorias">
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 col-lg-4">
+                  <div class="card product-card h-100">
+                    <div class="img-container">
+                      <img src="https://plazavea.vteximg.com.br/arquivos/ids/19527092-450-450/20146634.jpg?v=638011352870130000" class="card-img-top" alt="Tuyo">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">TUYO</h5>
+                      <p class="product-description">Caja x 20 unidades</p>
+                      <p class="card-text">S/ 12.50</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="card product-card h-100">
+                    <div class="img-container">
+                      <img src="https://corporacionliderperu.com/52023-large_default/winters-ole-ole-chocolate-bolsa-x-50-un.jpg" class="card-img-top" alt="Ole Ole">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">OLE OLE</h5>
+                      <p class="product-description">Bolsa x 50 unidades</p>
+                      <p class="card-text">S/ 7.00</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="card product-card h-100">
+                    <div class="img-container">
+                      <img src="https://dojiw2m9tvv09.cloudfront.net/70491/product/bonobonarcor30unidadesx15gr5891.jpg" class="card-img-top" alt="Bon a Bon">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">BON A BON</h5>
+                      <p class="product-description">Caja x 30 und.</p>
+                      <p class="card-text">S/ 26.50</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="card product-card h-100">
+                    <div class="img-container">
+                      <img src="https://candylandperu.com/wp-content/uploads/2023/02/canonazo.png" class="card-img-top" alt="Cañonazo">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">CAÑONAZO</h5>
+                      <p class="product-description">Caja x 24 und.</p>
+                      <p class="card-text">S/ 13.50</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="card product-card h-100">
+                    <div class="img-container">
+                      <img src="https://candylandperu.com/wp-content/uploads/2023/01/1059112_0.png" class="card-img-top" alt="Chin Chin Mix">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">CHIN CHIN MIX</h5>
+                      <p class="product-description">Caja x 12 und.</p>
+                      <p class="card-text">S/ 16.00</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="card product-card h-100">
+                    <div class="img-container">
+                      <img src="https://www.kiosclub.com/cdn/shop/files/fotosvarias_10.png?v=1744651080" class="card-img-top" alt="Rockaleta">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">ROCKALETA</h5>
+                      <p class="product-description">Bolsa x 40 und.</p>
+                      <p class="card-text">S/ 14.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Caramelos -->
+        <div class="accordion-item mb-3" id="categoria-caramelos">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#caramelos">
+              🍬 Caramelos
+            </button>
+          </h2>
+          <div id="caramelos" class="accordion-collapse collapse" data-bs-parent="#categorias">
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 col-lg-4">
+                  <div class="card product-card h-100">
+                    <div class="img-container">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuDj4q_fNhrTiSo0KKgbX7yVILRYIEPHFSrQ&s" class="card-img-top" alt="Bambi">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">BAMBI</h5>
+                      <p class="product-description">Bolsa x 100 und.</p>
+                      <p class="card-text">S/ 7.50</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="card product-card h-100">
+                    <div class="img-container">
+                      <img src="https://abarroteselprofe.com/wp-content/uploads/2024/01/CARAMELO-BIG-BEN-CHOCOLATE-BLANCO-BOLSA-scaled.jpg" class="card-img-top" alt="Big Ben Blanco">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">BIG BEN BLANCO</h5>
+                      <p class="product-description">Bolsa x 100 und.</p>
+                      <p class="card-text">S/ 10.50</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="card product-card h-100">
+                    <div class="img-container">
+                      <img src="https://candylandperu.com/wp-content/uploads/2023/02/314123.jpg" class="card-img-top" alt="Big Ben Toffe">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">BIG BEN TOFFE CAFFE</h5>
+                      <p class="product-description">Bolsa x 100 und.</p>
+                      <p class="card-text">S/ 15.00</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="card product-card h-100">
+                    <div class="img-container">
+                      <img src="https://candylandperu.com/wp-content/uploads/2023/01/499477001-1.webp" class="card-img-top" alt="Chicha Morada">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">CHICHA MORADA SAYON</h5>
+                      <p class="product-description">Bolsa x 110 und.</p>
+                      <p class="card-text">S/ 7.50</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="card product-card h-100">
+                    <div class="img-container">
+                      <img src="https://distribuidoralimaeste.pe/foto_prdt/89955.webp" class="card-img-top" alt="Frutal Mix">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">FRUTAL MIX</h5>
+                      <p class="product-description">Bolsa x 100 und.</p>
+                      <p class="card-text">S/ 6.90</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="card product-card h-100">
+                    <div class="img-container">
+                      <img src="https://metroio.vtexassets.com/arquivos/ids/418891-800-auto?v=638279380435930000&width=800&height=auto&aspect=true" class="card-img-top" alt="Menta Fresh">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">ALKA CRISTAL</h5>
+                      <p class="product-description">Bolsa x 90 und.</p>
+                      <p class="card-text">S/ 7.20</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Galletas -->
+        <div class="accordion-item mb-3" id="categoria-galletas">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#galletas">
+              🍪 Galletas
+            </button>
+          </h2>
+          <div id="galletas" class="accordion-collapse collapse" data-bs-parent="#categorias">
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 col-lg-4">
+                  <div class="card product-card h-100">
+                    <div class="img-container">
+                      <img src="https://plazavea.vteximg.com.br/arquivos/ids/19000185-512-512/20289613.jpg" class="card-img-top" alt="Chocman">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">MINI CHOCMAN PACK</h5>
+                      <p class="product-description">Pack x 20</p>
+                      <p class="card-text">S/ 10.90</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="card product-card h-100">
+                    <div class="img-container">
+                      <img src="https://www.tiendaperuonline.com/cdn/shop/products/bolsa-casino-chocolate_700x700.jpg?v=1677690469" class="card-img-top" alt="Casino Chocolate">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">CASINO CHOCOLATE</h5>
+                      <p class="product-description">x 6 unidades</p>
+                      <p class="card-text">S/ 6.50</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="card product-card h-100">
+                    <div class="img-container">
+                      <img src="https://plazavea.vteximg.com.br/arquivos/ids/30601686-450-450/20465105.jpg?v=638751486198230000" class="card-img-top" alt="Caritas">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">CARITAS PACK</h5>
+                      <p class="product-description">x 6 unidades</p>
+                      <p class="card-text">S/ 5.50</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="card product-card h-100">
+                    <div class="img-container">
+                      <img src="https://candylandperu.com/wp-content/uploads/2023/02/oreo.webp" class="card-img-top" alt="Oreo Mini">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">OREO MINI</h5>
+                      <p class="product-description">Pack x 6</p>
+                      <p class="card-text">S/ 6.00</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="card product-card h-100">
+                    <div class="img-container">
+                      <img src="https://wongfood.vtexassets.com/arquivos/ids/539415-800-auto?v=637862688621900000&width=800&height=auto&aspect=true" class="card-img-top" alt="Wafer Vainilla">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">WAFER VAINILLA</h5>
+                      <p class="product-description">Pack x 24</p>
+                      <p class="card-text">S/ 6.20</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="card product-card h-100">
+                    <div class="img-container">
+                      <img src="https://www.lagranbodega.com.pe/public/images/products/31301.jpg" class="card-img-top" alt="Galleta Frutilla">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">GLACITA FRESA</h5>
+                      <p class="product-description">Pack x 6</p>
+                      <p class="card-text">S/ 5.20</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chupetines -->
+        <div class="accordion-item mb-3" id="categoria-chupetines">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chupetines">
+              🍭 Chupetines
+            </button>
+          </h2>
+          <div id="chupetines" class="accordion-collapse collapse" data-bs-parent="#categorias">
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 col-lg-4">
+                  <div class="card product-card h-100">
+                    <div class="img-container">
+                      <img src="https://wongfood.vtexassets.com/arquivos/ids/539410-800-auto?v=637862688592630000&width=800&height=auto&aspect=true" class="card-img-top" alt="Bon Bon Bum Fresa">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">BON BON BUM FRESA</h5>
+                      <p class="product-description">Caja x 24</p>
+                      <p class="card-text">S/ 8.50</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="card product-card h-100">
+                    <div class="img-container">
+                      <img src="https://candylandperu.com/wp-content/uploads/2023/01/chupetes-globo-pop-led-surtidos-20-unidades.jpg" class="card-img-top" alt="Globo Pop LED Mix">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">GLOBO POP LED MIX</h5>
+                      <p class="product-description">Caja x 20</p>
+                      <p class="card-text">S/ 16.50</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="card product-card h-100">
+                    <div class="img-container">
+                      <img src="https://dulcefiestagolosinas.com/wp-content/uploads/2023/06/GLOBO-POP-AGRIDULCE-MARACUYA.webp" class="card-img-top" alt="Globo Pop Agridulce">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">GLOBO POP AGRIDULCE</h5>
+                      <p class="product-description">Bolsa x 24</p>
+                      <p class="card-text">S/ 9.00</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="card product-card h-100">
+                    <div class="img-container">
+                      <img src="https://http2.mlstatic.com/D_NQ_NP_628583-MLA31063484930_062019-O.webp" class="card-img-top" alt="Chupetín Picante">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">CHUPETE ANILLO</h5>
+                      <p class="product-description">Bolsa x 20</p>
+                      <p class="card-text">S/ 9.90</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="card product-card h-100">
+                    <div class="img-container">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcyVsa1lTm7fuxdasHrezrmFTOc0tGOQnD1A&s" class="card-img-top" alt="Twist Pop">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">TWIST POP</h5>
+                      <p class="product-description">Caja x 12</p>
+                      <p class="card-text">S/ 14.50</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="card product-card h-100">
+                    <div class="img-container">
+                      <img src="https://i5.walmartimages.com.mx/samsmx/images/product-images/img_large/000063000l.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" class="card-img-top" alt="Rockaleta Chupetín">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">ROCKALETA CHUPETÍN</h5>
+                      <p class="product-description">Bolsa x 40</p>
+                      <p class="card-text">S/ 14.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gomitas -->
+        <div class="accordion-item mb-3" id="categoria-gomitas">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gomitas">
+              🍬 Gomitas
+            </button>
+          </h2>
+          <div id="gomitas" class="accordion-collapse collapse" data-bs-parent="#categorias">
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 col-lg-4">
+                  <div class="card product-card h-100">
+                    <div class="img-container">
+                      <img src="https://alem.tufacel.com/assets/uploads/8ed010352d73cd709a4e1e1ae653b748.jpg" class="card-img-top" alt="Ositos de Goma">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">OSITOS DE GOMA</h5>
+                      <p class="product-description">Bolsa x 80 g</p>
+                      <p class="card-text">S/ 4.00</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="card product-card h-100">
+                    <div class="img-container">
+                      <img src="https://media.falabella.com/tottusPE/43127548_1/w=800,h=800,fit=pad" class="card-img-top" alt="Gomitas Moras">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">GOMITAS MORAS</h5>
+                      <p class="product-description">Bolsa x 100 g</p>
+                      <p class="card-text">S/ 4.80</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="card product-card h-100">
+                    <div class="img-container">
+                      <img src="https://wongfood.vtexassets.com/arquivos/ids/649193/Gomitas-Mogul-Extreme-Tutti-Frutti-80g-1-351653631.jpg?v=638267026141030000" class="card-img-top" alt="Mogul Extreme">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Mogul Extreme</h5>
+                      <p class="product-description">Bolsa x 50 g</p>
+                      <p class="card-text">S/ 5.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <section id="horario">
+      <div class="container text-center">
+        <h2 class="mb-4">Horario de apertura</h2>
+        <p id="estado-actual" class="estado-abierto-cerrado mb-4">Cargando estado...</p>
+        <div class="horario-lista">
+          <div class="horario-item" data-dia="1">Lunes: <span class="hora">09:00 - 16:00</span></div>
+          <div class="horario-item" data-dia="2">Martes: <span class="hora">09:00 - 16:00</span></div>
+          <div class="horario-item" data-dia="3">Miércoles: <span class="hora">09:00 - 16:00</span></div>
+          <div class="horario-item" data-dia="4">Jueves: <span class="hora">09:00 - 16:00</span></div>
+          <div class="horario-item" data-dia="5">Viernes: <span class="hora">09:00 - 16:00</span></div>
+          <div class="horario-item" data-dia="6">Sábado: <span class="hora">10:00 - 14:00</span></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Nosotros -->
+    <section id="nosotros" class="text-center">
+      <div class="container">
+        <h2 class="mb-4">Sobre Aaander <i class="fas fa-heart"></i></h2>
+        <p class="lead">Aaander nació en provincia como un sueño familiar lleno de dulzura. Cada producto es una experiencia pensada para compartir momentos felices. ¡Gracias por apoyarnos en este dulce camino!</p>
+        <div class="mt-4">
+          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Familia Aaander" class="img-fluid rounded-circle" style="max-width: 200px; border: 5px solid var(--rosa-pastel);">
+        </div>
+      </div>
+    </section>
+
+    <!-- WhatsApp -->
+    <a id="whatsapp-button"
+      href="https://api.whatsapp.com/send/?phone=51975490973&text=He+visto+su+p%C3%A1gina+y+estoy+interesado+en+hacer+una+orden+de...&type=phone_number&app_absent=0"
+      target="_blank"
+      title="Contáctanos por WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer id="footer" class="text-center py-4">
+      <div class="container">
+        <p class="mb-2">&copy; 2025 Aaander - Todos los derechos reservados</p>
+        <p class="mb-0">Dulzura hecha en Perú <i class="fas fa-flag"></i></p>
+        <div class="mt-3">
+        </div>
+      </div>
+    </footer>
+
+    <!-- ChatBot -->
+    <div id="chatbot-toggle">
+      <i class="fas fa-comments"></i>
+    </div>
+
+    <div id="chatbot-popup" class="hidden">
+      <div class="chat-header">
+        🎀 AaanderBot
+        <button id="close-chatbot" class="btn-close-chatbot">×</button>
+      </div>
+      <div class="chat-body" id="chat-body">
+        <div class="chat-message bot">¡Hola! ¿En qué te puedo ayudar hoy?</div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+</html>
