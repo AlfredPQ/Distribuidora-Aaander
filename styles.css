@@ -122,27 +122,6 @@ body::before {
   margin-right: 0 !important;
 }
 
-
-.logo-img {
-  height: 100px;
-  max-height: 120px;
-}
-
-#navbar {
-  min-height: 120px;
-}
-
-@media (max-width: 768px) {
-  .logo-img {
-    height: 80px;
-    max-height: 100px;
-  }
-  
-  #navbar {
-    min-height: 100px;
-  }
-}
-
 .logo-img {
   object-fit: cover;
   object-fit: contain;
