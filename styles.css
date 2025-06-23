@@ -49,17 +49,6 @@ body::before {
   transition: all 0.3s ease;
 }
 
-.navbar-brand {
-  font-size: 1.8rem;
-  color: var(--primary);
-  display: flex;
-  align-items: center;
-}
-
-.navbar-brand i {
-  color: var(--secondary);
-}
-
 .nav-link {
   color: var(--dark) !important;
   font-weight: 500;
@@ -86,6 +75,79 @@ body::before {
 .nav-link:hover::after {
   width: 100%;
 }
+
+
+.navbar-brand {
+  padding: 0;
+  margin: 0;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 80px;
+  width: auto;
+  max-height: 100px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+  mix-blend-mode: multiply;
+}
+
+#navbar {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.navbar > .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    height: 60px;
+    max-height: 80px;
+  }
+  
+  #navbar {
+    min-height: 80px;
+  }
+}
+
+.logo-img.me-2 {
+  margin-right: 0 !important;
+}
+
+
+.logo-img {
+  height: 100px;
+  max-height: 120px;
+}
+
+#navbar {
+  min-height: 120px;
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    height: 80px;
+    max-height: 100px;
+  }
+  
+  #navbar {
+    min-height: 100px;
+  }
+}
+
+.logo-img {
+  object-fit: cover;
+  object-fit: contain;
+}
+
 
 #hero {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
@@ -612,5 +674,3 @@ body::before {
     padding: 0.7rem;
   }
 }
-
-
